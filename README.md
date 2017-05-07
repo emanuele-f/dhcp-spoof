@@ -69,7 +69,7 @@ a FORCERENEW packet. Sadly (or furtunately), the option is not really supported 
 (I've tested it on an new android device), so it is not usable.
 
 Another way to try to force the clients to connect to the fake DHCP server is by deauthenticating them. I've used my
-[https://github.com/emanuele-f/remote-deauth](remote-deauth) software to force my clients to re-authenticate whenever they go
+[remote-deauth](https://github.com/emanuele-f/remote-deauth) software to force my clients to re-authenticate whenever they go
 with the good DHCP server. However, it turns out, that most clients will prefer to connect to the last used DHCP server, thus
 ignoring the fake DHCP server.
 
@@ -82,5 +82,4 @@ anyway. Further investigation should be done on trying to craft a single DHCPNAC
 Conclusion
 ----------
 
-Although the DHCP protocol, which is still is widespread use, has some security flaws which would allow a client to mess up the network,
-performing a MITM attack to hijact the clients is not so reliable as other attacks as the ARP spoofing are.
+Although the DHCP protocol, which is still is widespread use, has some security flaws which would allow a client to mess up the network, performing a MITM attack to hijact the clients is not so reliable as other attacks as the ARP spoofing are.
